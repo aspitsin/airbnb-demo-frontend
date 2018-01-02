@@ -1,5 +1,13 @@
 import React from "react";
-import logo from './logo.svg';
+import styled from "styled-components";
+import logo from "./Header/logo.svg";
+
+const logo = styled.img`
+  display: block;
+  height: 12px;
+  margin: 1rem auto;
+`;
+
 export default function() {
   return (
     <div className="App-header">
