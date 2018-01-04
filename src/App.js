@@ -1,21 +1,24 @@
 import React, { Component } from "react";
-import "./App.css";
-import Header from "./Header";
 import styled from "styled-components";
+import Header from "./Header";
+import Landing from "./Landing";
+import Footer from "./Footer";
 
-const Row = styled.div`
-  display: flex;
-  justify-content: center;
+const Box = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 29rem;
 `;
-const Container = styled.div``;
+
 class App extends Component {
   render() {
     return (
-      <Row>
-        <Container>
-          <Header />
-        </Container>
-      </Row>
+      <Box>
+        <Header />
+        <Landing />
+        <Footer />
+      </Box>
     );
   }
 }
