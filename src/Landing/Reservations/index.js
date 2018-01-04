@@ -73,7 +73,7 @@ export default () => {
               <Link href="/">
                 <Image src={img3} alt="" />
                 <Category>German american</Category>
-                <CardTitle>Prime Meats</CardTitle>
+                <CardTitle>PrimeMeats</CardTitle>
                 <AverageCheck>About $55 per person</AverageCheck>
               </Link>
             </Card>
