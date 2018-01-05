@@ -16,7 +16,7 @@ import {
   Social,
   SocialLink,
   Icon,
-  LinkBottom
+  LinkSupport
 } from "./styled";
 import logo from "./logo.svg";
 import twitter from "./twiter.svg";
@@ -40,7 +40,7 @@ export default function() {
               </SelectWrap>
               <SelectWrap>
                 <Select>
-                  <option>United States dollar</option>
+                  <option>United States Dollar</option>
                   <option>Ruble</option>
                 </Select>
                 <Arrow src={chevron_down} />
@@ -86,9 +86,9 @@ export default function() {
             © Airbnb Inc.
           </Copyright>
           <NavBottom>
-            <LinkBottom href="#">Terms</LinkBottom>
-            <LinkBottom href="#">Privacy</LinkBottom>
-            <LinkBottom href="#">Site map</LinkBottom>
+            <LinkSupport href="#">Terms</LinkSupport>
+            <LinkSupport href="#">Privacy</LinkSupport>
+            <LinkSupport href="#">Site map</LinkSupport>
             <Social>
               <SocialLink href="#">
                 <Icon src={facebook} />

@@ -82,10 +82,7 @@ export const Select = styled.select`
   font-family: "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   cursor: pointer;
   width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   text-indent: 0.01px;
-  text-overflow: "";
   -ms-appearance: none;
   appearance: none !important;
   &::-ms-expand {
@@ -107,7 +104,7 @@ export const Nav = styled.nav`
   text-align: left;
 `;
 
-export const Title = styled.div`
+export const Title = styled.h3`
   margin-bottom: 19px;
   font-size: 12px;
   line-height: 16px;
@@ -171,7 +168,7 @@ export const Icon = styled.img`
   width: 100%;
 `;
 
-export const LinkBottom = Link.extend`
+export const LinkSupport = Link.extend`
   margin-right: 12px;
   margin-bottom: 0;
   @media (min-width: 768px) {
