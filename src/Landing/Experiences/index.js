@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Title } from "../styled";
 import { List, Card, Link, SeeAll, Image, SliderArrow } from "../styled";
-import img1 from "./img1.svg";
-import img2 from "./img2.svg";
-import img3 from "./img3.svg";
-import img4 from "./img4.svg";
+import img1 from "./img1.png";
+import img2 from "./img2.png";
+import img3 from "./img3.png";
+import img4 from "./img4.png";
 
 const Experiences = styled.section``;
 

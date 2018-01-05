@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { List, Title } from "../styled";
-import img1 from "./experiences.svg";
-import img2 from "./homes.svg";
-import img3 from "./restaurants.svg";
+import img1 from "./experiences.png";
+import img2 from "./homes.png";
+import img3 from "./restaurants.png";
 
 const Explore = styled.section``;
 

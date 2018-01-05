@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { List, Card, Link, Title, SeeAll, Image, SliderArrow } from "../styled";
-import img1 from "./reserv1.svg";
-import img2 from "./reserv2.svg";
-import img3 from "./reserv3.svg";
-import img4 from "./reserv4.svg";
+import img1 from "./reserv1.png";
+import img2 from "./reserv2.png";
+import img3 from "./reserv3.png";
+import img4 from "./reserv4.png";
 
 const Reservations = styled.section``;
 
