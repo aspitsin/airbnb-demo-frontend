@@ -10,6 +10,7 @@ const Nav = styled.nav`
 
 const Button = styled.nav`
   margin-right: 0.5rem;
+  padding-top: 1rem;
 `;
 
 const Link = styled.a`
