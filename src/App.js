@@ -4,7 +4,7 @@ import Header from "./Header";
 import Landing from "./Landing";
 import Footer from "./Footer";
 
-const Box = styled.div`
+const Container = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
@@ -14,11 +14,11 @@ const Box = styled.div`
 class App extends Component {
   render() {
     return (
-      <Box>
+      <Container>
         <Header />
         <Landing />
         <Footer />
-      </Box>
+      </Container>
     );
   }
 }
