@@ -11,6 +11,11 @@ export const Title = styled.h1`
   line-height: 2.1rem;
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #383838;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
 `;
 
 export const List = styled.div`
