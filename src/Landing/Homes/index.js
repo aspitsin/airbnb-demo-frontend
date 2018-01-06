@@ -6,13 +6,20 @@ import img1 from "./relax.png";
 import img2 from "./privatebedr.png";
 import img3 from "./TropicalHouse.png";
 
-const Homes = styled.section``;
+const Homes = styled.section`
+  position: relative;
+`;
 
 const CardTitle = styled.h2`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
   margin-bottom: 0.1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 `;
 
 const Description = styled.p`
@@ -21,6 +28,10 @@ const Description = styled.p`
   font-size: 1rem;
   line-height: 1.2rem;
   margin-bottom: 0.4rem;
+  @media (min-width: 768px) {
+    line-height: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
 `;
 
 const Superhost = styled.span`
@@ -29,7 +40,7 @@ const Superhost = styled.span`
 `;
 
 const Arrow = SliderArrow.extend`
-  top: 5.1rem;
+  top: 40%;
 `;
 
 export default () => {
