@@ -8,33 +8,22 @@ const Nav = styled.nav`
   line-height: 1.5rem;
 `;
 
-const Button = styled.nav`
-  margin-right: 0.5rem;
-  padding-top: 1rem;
-`;
-
 const Link = styled.a`
   padding: 0.5rem;
   color: #383838;
   text-align: center;
   text-decoration: none;
+  margin-right: 0.5rem;
+  padding-top: 1rem;
 `;
 
 export default () => {
   return (
     <Nav>
-      <Button>
-        <Link href="">Become a host</Link>
-      </Button>
-      <Button>
-        <Link href="">Help</Link>
-      </Button>
-      <Button>
-        <Link href="">Sign Up</Link>
-      </Button>
-      <Button>
-        <Link href="">Log In</Link>
-      </Button>
+      <Link href="">Become a host</Link>
+      <Link href="">Help</Link>
+      <Link href="">Sign Up</Link>
+      <Link href="">Log In</Link>
     </Nav>
   );
 };
