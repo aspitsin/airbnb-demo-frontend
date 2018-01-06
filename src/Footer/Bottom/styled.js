@@ -41,7 +41,7 @@ export const Copyright = styled.div`
   }
 `;
 
-export const NavBottom = styled.div`
+export const NavBottom = styled.nav`
   padding-top: 12px;
   display: flex;
   align-items: center;
