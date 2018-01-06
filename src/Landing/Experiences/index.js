@@ -6,6 +6,7 @@ import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img4 from "./img4.png";
+import StarWrapper from "../Stars/index";
 
 const Experiences = styled.section`
   position: relative;
@@ -55,6 +56,7 @@ export default () => {
                 <CardTitle>Forest therapy</CardTitle>
               </Link>
               <div>
+                <StarWrapper />
                 <Reviews>44 reviews</Reviews>
               </div>
             </Card>
@@ -70,6 +72,7 @@ export default () => {
                 <CardTitle>Whale watching</CardTitle>
               </Link>
               <div>
+                <StarWrapper />
                 <Reviews>46 reviews</Reviews>
               </div>
             </Card>
@@ -85,6 +88,7 @@ export default () => {
                 <CardTitle>Table Mountain Summit, Cable Car Down</CardTitle>
               </Link>
               <div>
+                <StarWrapper />
                 <Reviews>44 reviews</Reviews>
               </div>
             </Card>
@@ -100,6 +104,7 @@ export default () => {
                 <CardTitle>Salsa Night</CardTitle>
               </Link>
               <div>
+                <StarWrapper />
                 <Reviews>44 reviews</Reviews>
               </div>
             </Card>

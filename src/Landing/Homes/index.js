@@ -5,6 +5,7 @@ import { Card, Link, SeeAll, Image, SliderArrow, Slider } from "../styled";
 import img1 from "./relax.png";
 import img2 from "./privatebedr.png";
 import img3 from "./TropicalHouse.png";
+import StarWrapper from "../Stars/index";
 
 const Homes = styled.section`
   position: relative;
@@ -59,7 +60,7 @@ export default () => {
                 <CardTitle>$82 La Salentina, see, nature & relax</CardTitle>
               </Link>
               <Description>Entire house · 9 beds</Description>
-
+              <StarWrapper />
               <Superhost>97 · Superhost</Superhost>
             </Card>
           </div>
@@ -72,7 +73,7 @@ export default () => {
                 </CardTitle>
               </Link>
               <Description>Entire house · 5 beds</Description>
-
+              <StarWrapper />
               <Superhost>161 · Superhost</Superhost>
             </Card>
           </div>
@@ -83,7 +84,7 @@ export default () => {
                 <CardTitle>$200 Dreamy Tropical Tree House</CardTitle>
               </Link>
               <Description>Entire treehouse · 1 bed</Description>
-
+              <StarWrapper />
               <Superhost>364 · Superhost</Superhost>
             </Card>
           </div>
