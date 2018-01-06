@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { List, Card, Link, Title, Image, SliderArrow } from "../styled";
+import { List, Card, Link, Title, Image, SliderArrow, Slider } from "../styled";
 import img1 from "./Paris.png";
 import img2 from "./Miami.png";
 import img3 from "./Tokyo.png";
@@ -17,17 +17,7 @@ const City = styled.p`
 `;
 
 const Arrow = SliderArrow.extend`
-  top: 5.6rem;
-`;
-
-export const Slider = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-wrap: nowrap;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  overflow: hidden;
+  top: 40%;
 `;
 
 export default () => {
