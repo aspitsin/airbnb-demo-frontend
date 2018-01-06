@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { List, Title } from "../styled";
+import { Slider, Title } from "../styled";
 import img1 from "./experiences.png";
 import img2 from "./homes.png";
 import img3 from "./restaurants.png";
@@ -34,34 +34,32 @@ export default () => {
   return (
     <Explore>
       <Title>Explore Airbnb</Title>
-      <div className="row">
-        <List>
-          <div className="col-xs-6 col-md-5 col-lg-4">
-            <Card>
-              <Link href="#">
-                <Image src={img1} alt="" />
-                <CardTitle>Homes</CardTitle>
-              </Link>
-            </Card>
-          </div>
-          <div className="col-xs-6 col-md-5 col-lg-4">
-            <Card>
-              <Link href="#">
-                <Image src={img2} alt="" />
-                <CardTitle>Experiences</CardTitle>
-              </Link>
-            </Card>
-          </div>
-          <div className="col-xs-6 col-md-5 col-lg-4">
-            <Card>
-              <Link href="#">
-                <Image src={img3} alt="" />
-                <CardTitle>Restaurants</CardTitle>
-              </Link>
-            </Card>
-          </div>
-        </List>
-      </div>
+      <Slider>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Card>
+            <Link href="#">
+              <Image src={img1} alt="" />
+              <CardTitle>Homes</CardTitle>
+            </Link>
+          </Card>
+        </div>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Card>
+            <Link href="#">
+              <Image src={img2} alt="" />
+              <CardTitle>Experiences</CardTitle>
+            </Link>
+          </Card>
+        </div>
+        <div className="col-xs-6 col-md-5 col-lg-4">
+          <Card>
+            <Link href="#">
+              <Image src={img3} alt="" />
+              <CardTitle>Restaurants</CardTitle>
+            </Link>
+          </Card>
+        </div>
+      </Slider>
     </Explore>
   );
 };

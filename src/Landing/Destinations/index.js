@@ -20,12 +20,22 @@ const Arrow = SliderArrow.extend`
   top: 5.6rem;
 `;
 
+export const Slider = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  overflow: hidden;
+`;
+
 export default () => {
   return (
     <Destinations>
       <Title>Featured destinations</Title>
       <div className="row">
-        <List>
+        <Slider>
           <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img1} alt="" />
@@ -69,7 +79,7 @@ export default () => {
           </div>
 
           <Arrow />
-        </List>
+        </Slider>
       </div>
     </Destinations>
   );

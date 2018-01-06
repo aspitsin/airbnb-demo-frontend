@@ -62,3 +62,13 @@ export const Image = styled.img`
   width: 100%;
   margin-bottom: 0.75rem;
 `;
+
+export const Slider = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  overflow: hidden;
+`;
