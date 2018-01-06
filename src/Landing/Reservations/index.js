@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { List, Card, Link, Title, SeeAll, Image, SliderArrow } from "../styled";
+import {
+  Slider,
+  Card,
+  Link,
+  Title,
+  SeeAll,
+  Image,
+  SliderArrow
+} from "../styled";
 import img1 from "./reserv1.png";
 import img2 from "./reserv2.png";
 import img3 from "./reserv3.png";
@@ -45,7 +53,7 @@ export default () => {
         <SeeAll href="/">See all</SeeAll>
       </Title>
       <div className="row">
-        <List>
+        <Slider>
           <div className="col-xs-6 col-md-4 col-lg-3">
             <Card>
               <Link href="/">
@@ -89,7 +97,7 @@ export default () => {
             </Card>
           </div>
           <Arrow />
-        </List>
+        </Slider>
       </div>
     </Reservations>
   );
