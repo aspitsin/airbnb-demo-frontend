@@ -26,42 +26,42 @@ export default () => {
       <Title>Featured destinations</Title>
       <div className="row">
         <List>
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img1} alt="" />
               <City>Paris</City>
             </Link>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img2} alt="" />
               <City>Miami</City>
             </Link>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img3} alt="" />
               <City>Tokyo</City>
             </Link>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img4} alt="" />
               <City>Cape town</City>
             </Link>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img5} alt="" />
               <City>Seoul</City>
             </Link>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-xs-4 col-md-3 col-lg-2">
             <Link href="/">
               <Image src={img6} alt="" />
               <City>Los Angeles</City>
