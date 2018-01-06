@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import star from "./star.svg";
+
 const Wrapper = styled.span`
   display: inline-block;
   margin-right: 0.25rem;
