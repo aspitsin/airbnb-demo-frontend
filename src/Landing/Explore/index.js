@@ -25,16 +25,16 @@ const Card = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
-  height: 4.5rem;
-  margin-right: 1.5rem;
   display: block;
-
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
   @media (min-width: 768px) {
     width: 6rem;
-    height: 4.5rem;
     margin-left: -0.0625rem;
     margin-top: -0.0625rem;
+    margin-bottom: -0.0625rem;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
   }
