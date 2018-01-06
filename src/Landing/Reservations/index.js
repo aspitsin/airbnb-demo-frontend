@@ -46,7 +46,7 @@ export default () => {
       </Title>
       <div className="row">
         <List>
-          <div className="col-lg-3">
+          <div className="col-xs-6 col-md-4 col-lg-3">
             <Card>
               <Link href="/">
                 <Image src={img1} alt="" />
@@ -58,7 +58,7 @@ export default () => {
               </Link>
             </Card>
           </div>
-          <div className="col-lg-3">
+          <div className="col-xs-6 col-md-4 col-lg-3">
             <Card>
               <Link href="/">
                 <Image src={img2} alt="" />
@@ -68,7 +68,7 @@ export default () => {
               </Link>
             </Card>
           </div>
-          <div className="col-lg-3">
+          <div className="col-xs-6 col-md-4 col-lg-3">
             <Card>
               <Link href="/">
                 <Image src={img3} alt="" />
@@ -78,7 +78,7 @@ export default () => {
               </Link>
             </Card>
           </div>
-          <div className="col-lg-3">
+          <div className="col-xs-6 col-md-4 col-lg-3">
             <Card>
               <Link href="/">
                 <Image src={img4} alt="" />
