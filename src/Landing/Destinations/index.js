@@ -11,7 +11,6 @@ import img6 from "./LosAng.png";
 const Destinations = styled.section``;
 
 const City = styled.p`
-  display: block;
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.25rem;
