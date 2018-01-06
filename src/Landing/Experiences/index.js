@@ -7,10 +7,12 @@ import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img4 from "./img4.png";
 
-const Experiences = styled.section``;
+const Experiences = styled.section`
+  position: relative;
+`;
 
 const Arrow = SliderArrow.extend`
-  top: 9.5rem;
+  top: 40%;
 `;
 
 const Price = styled.span`
@@ -24,6 +26,11 @@ const CardTitle = styled.span`
     sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 `;
 
 const Reviews = styled.span`
@@ -97,7 +104,6 @@ export default () => {
               </div>
             </Card>
           </div>
-
           <Arrow />
         </Slider>
       </div>
