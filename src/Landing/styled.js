@@ -32,8 +32,9 @@ export const Link = styled.a`
 `;
 
 export const SeeAll = styled.a`
+  white-space: nowrap;
   padding-right: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: "CircularAirBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5rem;
@@ -41,24 +42,31 @@ export const SeeAll = styled.a`
   background-repeat: no-repeat;
   background-size: 0.4rem 0.6rem;
   background-position: right 0.25rem center;
+  @media (min-width: 768px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const SliderArrow = styled.button`
-  position: absolute;
-  top: center;
-  right: -0.75rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  box-sizing: border-box;
-  background-color: #fff;
-  background-image: url(${arrowRight});
-  background-repeat: no-repeat;
-  background-size: 0.6rem 1.1rem;
-  background-position: center center;
-  border: 0.05rem solid rgba(72, 72, 72, 0.2);
-  box-shadow: 0 0.1rem 0.25rem rgba(72, 72, 72, 0.16);
-  border-radius: 1.25rem;
-  cursor: pointer;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    position: absolute;
+    top: center;
+    right: -1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: url(${arrowRight});
+    background-repeat: no-repeat;
+    background-size: 0.6rem 1.1rem;
+    background-position: center center;
+    border: 0.05rem solid rgba(72, 72, 72, 0.2);
+    box-shadow: 0 0.125rem 0.25rem rgba(72, 72, 72, 0.16);
+    border-radius: 1.25rem;
+    cursor: pointer;
+  }
 `;
 
 export const Image = styled.img`
