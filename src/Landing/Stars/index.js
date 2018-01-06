@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-const StarsList = styled.span`
+import star from "./star.svg";
+const Wrapper = styled.span`
   display: inline-block;
   margin-right: 0.25rem;
 `;
@@ -17,12 +17,12 @@ const Star = styled.span`
 
 export default () => {
   return (
-    <StarsList>
+    <Wrapper>
       <Star />
       <Star />
       <Star />
       <Star />
       <Star />
-    </StarsList>
+    </Wrapper>
   );
 };
