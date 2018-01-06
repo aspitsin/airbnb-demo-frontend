@@ -41,7 +41,7 @@ export default () => {
       </Title>
       <div className="row">
         <List>
-          <div className="col-lg-4">
+          <div className="col-xs-8 col-md-5 col-lg-4">
             <Card>
               <Link href="/">
                 <Image src={img1} alt="" />
@@ -52,7 +52,7 @@ export default () => {
               <Superhost>97 · Superhost</Superhost>
             </Card>
           </div>
-          <div className="col-lg-4">
+          <div className="col-xs-8 col-md-5 col-lg-4">
             <Card>
               <Link href="/">
                 <Image src={img2} alt="" />
@@ -65,7 +65,7 @@ export default () => {
               <Superhost>161 · Superhost</Superhost>
             </Card>
           </div>
-          <div className="col-lg-4">
+          <div className="col-xs-8 col-md-5 col-lg-4">
             <Card>
               <Link href="/">
                 <Image src={img3} alt="" />
