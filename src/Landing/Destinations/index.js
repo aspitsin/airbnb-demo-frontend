@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { List, Card, Link, Title, Image, SliderArrow, Slider } from "../styled";
+import { List, Card, Link, Title, Img, SliderArrow, Slider } from "../styled";
 import img1 from "./Paris.png";
 import img2 from "./Miami.png";
 import img3 from "./Tokyo.png";
@@ -22,55 +22,57 @@ const Arrow = SliderArrow.extend`
 
 export default () => {
   return (
-    <Destinations>
+    <section>
       <Title>Featured destinations</Title>
-      <div className="row">
-        <Slider>
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img1} alt="" />
-              <City>Paris</City>
-            </Link>
-          </div>
+      <div clasName="container">
+        <div className="row">
+          <Slider>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img1} alt="" />
+                <City>Paris</City>
+              </Link>
+            </div>
 
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img2} alt="" />
-              <City>Miami</City>
-            </Link>
-          </div>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img2} alt="" />
+                <City>Miami</City>
+              </Link>
+            </div>
 
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img3} alt="" />
-              <City>Tokyo</City>
-            </Link>
-          </div>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img3} alt="" />
+                <City>Tokyo</City>
+              </Link>
+            </div>
 
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img4} alt="" />
-              <City>Cape town</City>
-            </Link>
-          </div>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img4} alt="" />
+                <City>Cape town</City>
+              </Link>
+            </div>
 
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img5} alt="" />
-              <City>Seoul</City>
-            </Link>
-          </div>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img5} alt="" />
+                <City>Seoul</City>
+              </Link>
+            </div>
 
-          <div className="col-xs-4 col-md-3 col-lg-2">
-            <Link href="/">
-              <Image src={img6} alt="" />
-              <City>Los Angeles</City>
-            </Link>
-          </div>
+            <div className="col-xs-4 col-md-3 col-lg-2">
+              <Link href="/">
+                <Img src={img6} alt="" />
+                <City>Los Angeles</City>
+              </Link>
+            </div>
 
-          <Arrow />
-        </Slider>
+            <Arrow />
+          </Slider>
+        </div>
       </div>
-    </Destinations>
+    </section>
   );
 };
