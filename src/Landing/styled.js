@@ -69,7 +69,7 @@ export const SliderArrow = styled.button`
   }
 `;
 
-export const Image = styled.img`
+export const Img = styled.img`
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -85,3 +85,7 @@ export const Slider = styled.div`
   margin-right: -0.5rem;
   overflow: hidden;
 `;
+
+export const Price = styled.div``;
+export const CardTitle = styled.div``;
+export const Review = styled.div``;
