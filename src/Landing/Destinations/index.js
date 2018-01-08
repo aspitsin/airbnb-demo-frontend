@@ -1,24 +1,12 @@
 import React from "react";
-import styled from "styled-components";
-import { List, Card, Link, Title, Img, SliderArrow, Slider } from "../styled";
+import { Title } from "../styled";
 import img1 from "./Paris.png";
 import img2 from "./Miami.png";
 import img3 from "./Tokyo.png";
 import img4 from "./Capetown.png";
 import img5 from "./Seoul.png";
 import img6 from "./LosAng.png";
-
-const Destinations = styled.section``;
-
-const City = styled.p`
-  font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.25rem;
-`;
-
-const Arrow = SliderArrow.extend`
-  top: 40%;
-`;
+import Card from "./Card";
 
 export default () => {
   return (
@@ -26,51 +14,29 @@ export default () => {
       <Title>Featured destinations</Title>
       <div clasName="container">
         <div className="row">
-          <Slider>
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img1} alt="" />
-                <City>Paris</City>
-              </Link>
-            </div>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img1} city="Paris" />
+          </div>
 
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img2} alt="" />
-                <City>Miami</City>
-              </Link>
-            </div>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img2} city="Miami" />
+          </div>
 
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img3} alt="" />
-                <City>Tokyo</City>
-              </Link>
-            </div>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img3} city="Tokyo" />
+          </div>
 
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img4} alt="" />
-                <City>Cape town</City>
-              </Link>
-            </div>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img4} city="CapeTown" />
+          </div>
 
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img5} alt="" />
-                <City>Seoul</City>
-              </Link>
-            </div>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img5} city="Seoul" />
+          </div>
 
-            <div className="col-xs-4 col-md-3 col-lg-2">
-              <Link href="/">
-                <Img src={img6} alt="" />
-                <City>Los Angeles</City>
-              </Link>
-            </div>
-
-            <Arrow />
-          </Slider>
+          <div className="col-xs-4 col-md-3 col-lg-2">
+            <Card image={img6} city="Los Angeles" />
+          </div>
         </div>
       </div>
     </section>
