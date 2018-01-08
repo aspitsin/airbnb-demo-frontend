@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Top = styled.div`
-  padding-top: 16px;
-  padding-bottom: 24px;
   display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
+  padding-top: 16px;
   border-bottom: 1px solid rgba(72, 72, 72, 0.08);
+  padding-bottom: 24px;
+  margin-left: -12px;
+  margin-right: -12px;
   @media (min-width: 768px) {
     padding-top: 48px;
     padding-bottom: 32px;

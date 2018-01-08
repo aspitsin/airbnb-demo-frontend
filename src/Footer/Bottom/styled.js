@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Bottom = styled.div`
   padding: 16px 8px;
-  border-top: 1px solid rgba(72, 72, 72, 0.08);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: -10px;
+  margin-right: -10px;
   @media (min-width: 768px) {
     padding-top: 34px;
     padding-bottom: 34px;
