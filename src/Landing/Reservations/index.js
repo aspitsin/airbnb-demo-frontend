@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Slider, Title, SeeAll, Image, SliderArrow } from "../styled";
+import { Slider, Title, SeeAll, Img, SliderArrow } from "../styled";
 import img1 from "./reserv1.png";
 import img2 from "./reserv2.png";
 import img3 from "./reserv3.png";
@@ -60,48 +60,50 @@ const Arrow = SliderArrow.extend`
 
 export default () => {
   return (
-    <Reservations>
+    <section>
       <Title>
         Popular reservations around the world
         <SeeAll href="/">See all</SeeAll>
       </Title>
-      <div className="row">
-        <Slider>
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card href="/">
-              <Image src={img1} alt="" />
-              <Category>Speakeasy</Category>
-              <CardTitle>Chumley's</CardTitle>
-              <AverageCheck>About $60 per person</AverageCheck>
-            </Card>
-          </div>
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card href="/">
-              <Image src={img2} alt="" />
-              <Category>Korean gastropub</Category>
-              <CardTitle>Hanjan</CardTitle>
-              <AverageCheck>About $50 per person</AverageCheck>
-            </Card>
-          </div>
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card href="/">
-              <Image src={img3} alt="" />
-              <Category>German american</Category>
-              <CardTitle>PrimeMeats</CardTitle>
-              <AverageCheck>About $55 per person</AverageCheck>
-            </Card>
-          </div>
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card href="/">
-              <Image src={img4} alt="" />
-              <Category>Fine seafood</Category>
-              <CardTitle>Seaprice</CardTitle>
-              <AverageCheck>About $70 per person</AverageCheck>
-            </Card>
-          </div>
-          <Arrow />
-        </Slider>
+      <div className="container">
+        <div className="row">
+          <Slider>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card href="/">
+                <Img src={img1} alt="" />
+                <Category>Speakeasy</Category>
+                <CardTitle>Chumley's</CardTitle>
+                <AverageCheck>About $60 per person</AverageCheck>
+              </Card>
+            </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card href="/">
+                <Img src={img2} alt="" />
+                <Category>Korean gastropub</Category>
+                <CardTitle>Hanjan</CardTitle>
+                <AverageCheck>About $50 per person</AverageCheck>
+              </Card>
+            </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card href="/">
+                <Img src={img3} alt="" />
+                <Category>German american</Category>
+                <CardTitle>PrimeMeats</CardTitle>
+                <AverageCheck>About $55 per person</AverageCheck>
+              </Card>
+            </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card href="/">
+                <Img src={img4} alt="" />
+                <Category>Fine seafood</Category>
+                <CardTitle>Seaprice</CardTitle>
+                <AverageCheck>About $70 per person</AverageCheck>
+              </Card>
+            </div>
+            <Arrow />
+          </Slider>
+        </div>
       </div>
-    </Reservations>
+    </section>
   );
 };
