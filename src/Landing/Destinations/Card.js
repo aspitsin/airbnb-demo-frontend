@@ -27,6 +27,7 @@ const City = styled.h3`
     line-height: 18px;
   }
 `;
+
 export default function(props) {
   return (
     <Card>
