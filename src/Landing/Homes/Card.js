@@ -43,7 +43,10 @@ const Superhost = styled.span`
   line-height: 1rem;
 `;
 
-const Card = styled.div``;
+const Card = styled.div`
+  display: flex;
+`;
+
 const Link = styled.a`
   display: block;
 `;

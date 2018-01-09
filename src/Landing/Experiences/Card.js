@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Link, Img, Price, CardTitle, Review } from "../styled";
+import styled from "styled-components";
 import Stars from "../Stars";
 
 export default function(props) {
@@ -11,11 +11,23 @@ export default function(props) {
         <Price>{props.price}</Price>
         <CardTitle>{props.title}</CardTitle>
 
-        <div>
-          <Stars />
-          <Review>{props.review}</Review>
-        </div>
+        <Stars />
+        <Review>{props.review}</Review>
       </Link>
     </Card>
   );
 }
+
+export const Price = styled.div``;
+export const CardTitle = styled.div``;
+export const Review = styled.div``;
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
+export const Link = styled.a`
+  display: block;
+`;
+export const Card = styled.div`
+  display: flex;
+`;

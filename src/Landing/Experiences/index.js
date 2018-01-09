@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Title } from "../styled";
+import { Title, Wrapper } from "../styled";
 import { SeeAll } from "../styled";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
@@ -17,40 +17,42 @@ export default () => {
       </Title>
       <div className="container">
         <div className="row">
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card
-              title="Forest Therapy"
-              image={img1}
-              price="29$"
-              review="44 reviews"
-            />
-          </div>
+          <Wrapper>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card
+                title="Forest Therapy"
+                image={img1}
+                price="29$"
+                review="44 reviews"
+              />
+            </div>
 
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card
-              title="Whale watching"
-              image={img2}
-              price="69$"
-              review="46 reviews"
-            />
-          </div>
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card
-              title="Table Mountain Summit, Cable Car Downing"
-              image={img3}
-              price="69$"
-              review="44 reviews"
-            />
-          </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card
+                title="Whale watching"
+                image={img2}
+                price="69$"
+                review="46 reviews"
+              />
+            </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card
+                title="Table Mountain Summit, Cable Car Downing"
+                image={img3}
+                price="69$"
+                review="44 reviews"
+              />
+            </div>
 
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card
-              title="Salsa night"
-              image={img4}
-              price="50$"
-              review="44 reviews"
-            />
-          </div>
+            <div className="col-xs-6 col-md-4 col-lg-3">
+              <Card
+                title="Salsa night"
+                image={img4}
+                price="50$"
+                review="44 reviews"
+              />
+            </div>
+          </Wrapper>
         </div>
       </div>
     </section>

@@ -25,7 +25,9 @@ export const List = styled.div`
   width: 100%;
 `;
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  display: flex;
+`;
 
 export const Link = styled.a`
   display: block;
@@ -47,33 +49,9 @@ export const SeeAll = styled.a`
   }
 `;
 
-export const SliderArrow = styled.button`
-  display: none;
-  @media (min-width: 992px) {
-    display: block;
-    position: absolute;
-    top: center;
-    right: -1.25rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    box-sizing: border-box;
-    background-color: #fff;
-    background-image: url(${arrowRight});
-    background-repeat: no-repeat;
-    background-size: 0.6rem 1.1rem;
-    background-position: center center;
-    border: 0.05rem solid rgba(72, 72, 72, 0.2);
-    box-shadow: 0 0.125rem 0.25rem rgba(72, 72, 72, 0.16);
-    border-radius: 1.25rem;
-    cursor: pointer;
-  }
-`;
-
 export const Img = styled.img`
-  box-sizing: border-box;
-  display: block;
   width: 100%;
-  margin-bottom: 0.75rem;
+  height: auto;
 `;
 
 export const Slider = styled.div`
@@ -89,3 +67,16 @@ export const Slider = styled.div`
 export const Price = styled.div``;
 export const CardTitle = styled.div``;
 export const Review = styled.div``;
+
+export const Wrapper = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  @media (min-width: 992px) {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+`;
