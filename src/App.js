@@ -1,24 +1,17 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-import Header from "./Header";
+import { BrowserRouter, Route } from "react-router-dom";
 import Landing from "./Landing";
-import Footer from "./Footer";
-
-const Container = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 29rem;
-`;
+import HomesPage from "./HomesPage";
 
 class App extends Component {
   render() {
     return (
-      <Container>
-        <Header />
-        <Landing />
-        <Footer />
-      </Container>
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={Landing} />
+          <Route path="/homes" component={HomesPage} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
