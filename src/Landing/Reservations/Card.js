@@ -16,7 +16,7 @@ export default function(props) {
 }
 
 const Card = styled.a`
-  display: block;
+  display: flex;
 `;
 
 const Category = styled.span`
@@ -63,6 +63,7 @@ const Img = styled.img`
   width: 100%;
   height: auto;
 `;
+
 const Link = styled.a`
   text-decoration: none;
   display: flex;
