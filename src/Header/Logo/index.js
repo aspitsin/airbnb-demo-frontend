@@ -6,6 +6,7 @@ const Logo = styled.a`
   display: flex;
   align-items: center;
   height: 100%;
+  margin-top: 10px;
 `;
 
 const Img = styled.img`
