@@ -18,16 +18,42 @@ export default function(props) {
   );
 }
 
-export const Price = styled.div``;
-export const CardTitle = styled.div``;
-export const Review = styled.div``;
-export const Img = styled.img`
+const Price = styled.div`
+  font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+`;
+
+const CardTitle = styled.div`
+  font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 0.1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+`;
+
+const Review = styled.div`
+  font-size: 0.75rem;
+  line-height: 1rem;
+`;
+
+const Img = styled.img`
   width: 100%;
   height: auto;
 `;
-export const Link = styled.a`
+const Link = styled.a`
   display: block;
 `;
-export const Card = styled.div`
+const Card = styled.div`
   display: flex;
 `;

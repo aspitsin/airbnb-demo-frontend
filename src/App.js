@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import Landing from "./Landing";
+import Main from "./Main.js";
 import HomesPage from "./HomesPage";
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Route path="/" exact component={Landing} />
+          <Route path="/" exact component={Main} />
           <Route path="/homes" component={HomesPage} />
         </div>
       </BrowserRouter>

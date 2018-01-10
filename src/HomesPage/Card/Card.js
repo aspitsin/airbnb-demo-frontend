@@ -22,7 +22,7 @@ const CardTitle = styled.h2`
 
   @media (min-width: 768px) {
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 0.4rem;
   }
 `;
 
@@ -33,14 +33,14 @@ const Description = styled.p`
 
   margin-bottom: 0.4rem;
   @media (min-width: 768px) {
-    line-height: 1.2rem;
-    margin-bottom: 0.4rem;
+    line-height: 0.4rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
 const Superhost = styled.span`
   font-size: 0.75rem;
-  line-height: 1rem;
+  line-height: 1.2rem;
 `;
 
 const Card = styled.div`
@@ -52,8 +52,5 @@ const Link = styled.a`
 `;
 
 const Img = styled.img`
-  box-sizing: border-box;
-  display: block;
   width: 100%;
-  margin-bottom: 0.75rem;
 `;
