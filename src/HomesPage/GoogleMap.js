@@ -7,7 +7,7 @@ const Maps = styled.div`
   width: 391px;
   height: 700px;
   left: 993px;
-  top: 140px;
+  top: 138px;
 `;
 
 export default () => {
