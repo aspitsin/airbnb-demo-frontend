@@ -15,35 +15,31 @@ export default function(props) {
   );
 }
 
-const Card = styled.a`
-  display: flex;
-`;
+const Card = styled.a``;
 
 const Category = styled.span`
   display: block;
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
-  line-height: 0.75px;
+  font-size: 0.5rem;
+  line-height: 0.6px;
   margin-top: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   text-transform: uppercase;
-
   @media (min-width: 768px) {
     font-size: 0.6rem;
-    line-height: 0.75px;
+    line-height: 1 px;
   }
 `;
 
 const CardTitle = styled.span`
   display: block;
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
-  margin-bottom: 0.25rem;
 
   @media (min-width: 768px) {
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.5 rem;
   }
 `;
 
@@ -52,10 +48,11 @@ const AverageCheck = styled.span`
   line-height: 1rem;
   font-family: "CircularAirLight", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-
+  font-size: 0.75rem;
+  line-height: 0.5 rem;
   @media (min-width: 768px) {
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 0.5 rem;
   }
 `;
 
@@ -65,9 +62,5 @@ const Img = styled.img`
 `;
 
 const Link = styled.a`
-  text-decoration: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  cursor: pointer;
+  display: block;
 `;

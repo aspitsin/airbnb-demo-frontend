@@ -10,13 +10,14 @@ export default function(props) {
 
         <Price>{props.price}</Price>
         <CardTitle>{props.title}</CardTitle>
-
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Review>{props.review}</Review>
+        <div>
+          <Star src={star} />
+          <Star src={star} />
+          <Star src={star} />
+          <Star src={star} />
+          <Star src={star} />
+          <Reviews>{props.review}</Reviews>
+        </div>
       </Link>
     </Card>
   );
@@ -26,33 +27,28 @@ const Star = styled.img`
   margin-right: 4px;
 `;
 
-const Price = styled.div`
+const Price = styled.span`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  margin-bottom: 0.1rem;
-
-  @media (min-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
+  line-height: 1.7rem;
+  padding-right: 0.5rem;
 `;
 
-const CardTitle = styled.div`
-  font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  margin-bottom: 0.1rem;
-
-  @media (min-width: 768px) {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
-`;
-
-const Review = styled.div`
+const CardTitle = styled.h2`
+  display: inline;
+  font-family: "CircularAirLight", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-size: 0.75rem;
-  line-height: 1rem;
+  font-weight: normal;
+  line-height: 1.2rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+`;
+
+const Reviews = styled.span`
+  font-size: 0.75rem;
+  line-height: 0.9rem;
 `;
 
 const Img = styled.img`
@@ -62,6 +58,4 @@ const Img = styled.img`
 const Link = styled.a`
   display: block;
 `;
-const Card = styled.div`
-  display: flex;
-`;
+const Card = styled.div``;

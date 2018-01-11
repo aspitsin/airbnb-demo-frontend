@@ -10,7 +10,7 @@ import Card from "./Card/Card";
 import Maps from "./GoogleMap";
 
 const Homes = styled.div`
-  margin-top: 80px;
+  padding-top: 150px;
 `;
 
 export default () => {
