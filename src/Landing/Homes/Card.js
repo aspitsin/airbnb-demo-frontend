@@ -27,10 +27,9 @@ const Star = styled.img`
 
 const CardTitle = styled.h2`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   margin-bottom: 0.1rem;
-
   @media (min-width: 768px) {
     font-size: 1rem;
     line-height: 1.2rem;
@@ -41,8 +40,9 @@ const Description = styled.p`
   font-family: "CircularAirLight", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
   font-size: 1rem;
-
+  line-height: 1rem;
   margin-bottom: 0.4rem;
+  margin-top: 0.3rem;
   @media (min-width: 768px) {
     line-height: 1.2rem;
     margin-bottom: 0.4rem;

@@ -3,11 +3,11 @@ import styled from "styled-components";
 import GoogleMapReact from "google-map-react";
 
 const Maps = styled.div`
-  position: absolute;
+  position: fixed;
   width: 391px;
-  height: 900px;
-  left: 1010px;
-  top: 141px;
+  height: 700px;
+  left: 993px;
+  top: 140px;
 `;
 
 export default () => {
