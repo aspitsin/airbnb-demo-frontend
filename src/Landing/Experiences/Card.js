@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Stars from "../Stars";
+import star from "../Stars/Star.png";
 
 export default function(props) {
   return (
@@ -11,12 +11,20 @@ export default function(props) {
         <Price>{props.price}</Price>
         <CardTitle>{props.title}</CardTitle>
 
-        <Stars />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
         <Review>{props.review}</Review>
       </Link>
     </Card>
   );
 }
+const Star = styled.img`
+  color: #008489;
+  margin-right: 4px;
+`;
 
 const Price = styled.div`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;

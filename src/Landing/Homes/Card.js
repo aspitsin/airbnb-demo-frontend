@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import star from "../Stars/Star.png";
 
 export default function(props) {
   return (
@@ -8,11 +9,21 @@ export default function(props) {
         <Img src={props.image} alt="Homes" />
         <CardTitle>{props.title}</CardTitle>
         <Description>{props.descrip}</Description>
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
         <Superhost>{props.hosts}</Superhost>
       </Link>
     </Card>
   );
 }
+
+const Star = styled.img`
+  color: #008489;
+  margin-right: 4px;
+`;
 
 const CardTitle = styled.h2`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
