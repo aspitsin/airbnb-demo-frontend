@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Header from "./Header";
 import Landing from "./Landing";
 import Footer from "./Footer";
 
@@ -14,7 +13,6 @@ const Container = styled.div`
 export default () => (
   <div>
     <Container>
-      <Header />
       <Landing />
       <Footer />
     </Container>
