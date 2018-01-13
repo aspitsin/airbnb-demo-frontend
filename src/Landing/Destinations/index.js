@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, Wrapper } from "../styled";
+import { Title, Wrapper, SliderArrow } from "../styled";
 import img1 from "./Paris.png";
 import img2 from "./Miami.png";
 import img3 from "./Tokyo.png";
@@ -7,6 +7,10 @@ import img4 from "./Capetown.png";
 import img5 from "./Seoul.png";
 import img6 from "./LosAng.png";
 import Card from "./Card";
+
+const Arrow = SliderArrow.extend`
+  top: 30%;
+`;
 
 export default () => {
   return (
@@ -38,6 +42,7 @@ export default () => {
           <div className="col-xs-4 col-md-3 col-lg-2">
             <Card image={img6} city="Los Angeles" />
           </div>
+          <Arrow />
         </Wrapper>
       </div>
     </section>

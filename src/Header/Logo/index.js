@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "./logo.svg";
+import arrow from "./arrow.svg";
 
 const Logo = styled.a`
   display: flex;
@@ -13,6 +14,7 @@ const Img = styled.img`
   display: block;
   width: 2rem;
   height: 2rem;
+  padding-left: 0.25rem;
 `;
 
 const Arrow = styled.button`
@@ -22,7 +24,7 @@ const Arrow = styled.button`
   margin-left: 7px;
   border: none;
   background-color: transparent;
-
+background-image: url(${arrow})
   background-position: center center;
   background-size: 10px 7px;
   background-repeat: no-repeat;

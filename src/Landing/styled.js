@@ -60,7 +60,7 @@ export const SliderArrow = styled.button`
     display: block;
     position: absolute;
     top: center;
-    right: -1.25rem;
+    right: -0.85rem;
     width: 2.5rem;
     height: 2.5rem;
     box-sizing: border-box;
@@ -93,7 +93,6 @@ export const Wrapper = styled.div`
   }
 `;
 export const Slider = styled.div`
-  box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-wrap: nowrap;

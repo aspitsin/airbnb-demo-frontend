@@ -1,10 +1,14 @@
 import React from "react";
 import { Title, Wrapper } from "../styled";
-import { SeeAll } from "../styled";
+import { SeeAll, SliderArrow } from "../styled";
 import img1 from "./relax.png";
 import img2 from "./privatebedr.png";
 import img3 from "./TropicalHouse.png";
 import Card from "./Card";
+
+const Arrow = SliderArrow.extend`
+  top: 30%;
+`;
 
 export default () => {
   return (
@@ -40,6 +44,7 @@ export default () => {
               hosts="364 · Superhost"
             />
           </div>
+          <Arrow />
         </Wrapper>
       </div>
     </section>

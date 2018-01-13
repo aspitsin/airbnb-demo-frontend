@@ -1,10 +1,14 @@
 import React from "react";
-import { Title, SeeAll, Wrapper } from "../styled";
+import { Title, SeeAll, Wrapper, SliderArrow } from "../styled";
 import img1 from "./reserv1.png";
 import img2 from "./reserv2.png";
 import img3 from "./reserv3.png";
 import img4 from "./reserv4.png";
 import Card from "./Card";
+
+const Arrow = SliderArrow.extend`
+  top: 30%;
+`;
 
 export default () => {
   return (
@@ -48,6 +52,7 @@ export default () => {
               check="About $70 per person"
             />
           </div>
+          <Arrow />
         </Wrapper>
       </div>
     </section>
