@@ -8,7 +8,7 @@ const Wrapper = styled.div`
 `;
 
 const Location = styled.span`
-  position: absolute;
+  position: fixed;
   right: 15rem;
   top: 25rem;
   width: 2.5rem;
