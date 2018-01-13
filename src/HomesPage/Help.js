@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Message = styled.p`
+  margin-left: -25rem;
   margin-bottom: 5.5rem;
   font-size: 1rem;
   line-height: 1.25rem;

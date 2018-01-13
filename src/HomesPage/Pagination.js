@@ -42,7 +42,7 @@ const Arrow = styled.span`
 `;
 
 const ArrowRight = styled(Arrow)`
-  margin-left: 1.5rem;
+  margin-left: 0.8rem;
   border-radius: 1rem;
   background-image: url(${arrow});
   background-size: 0.375rem 0.625rem;
