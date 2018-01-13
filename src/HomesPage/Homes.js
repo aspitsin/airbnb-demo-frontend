@@ -8,6 +8,7 @@ import img5 from "./Card/img5.png";
 import img6 from "./Card/img6.png";
 import Card from "./Card/Card";
 import Maps from "./GoogleMap";
+import Location from "./Location.js";
 
 const Homes = styled.div`
   padding-top: 150px;
@@ -70,7 +71,9 @@ export default () => {
               hosts="221 · Superhost"
             />
           </div>
+
           <Maps />
+          <Location />
         </div>
       </div>
     </Homes>
