@@ -54,7 +54,7 @@ const Superhost = styled.span`
   font-size: 0.8rem;
   line-height: 1rem;
   position: absolute;
-  padding-top: 0.4rem;
+  padding-top: 0.45rem;
   padding-left: 0.2rem;
 `;
 

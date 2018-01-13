@@ -47,8 +47,11 @@ const CardTitle = styled.h2`
 `;
 
 const Reviews = styled.span`
-  font-size: 0.75rem;
-  line-height: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  position: absolute;
+  padding-top: 0.05rem;
+  padding-left: 0.2rem;
 `;
 
 const Img = styled.img`
