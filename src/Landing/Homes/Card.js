@@ -50,10 +50,10 @@ const Description = styled.p`
 `;
 
 const Superhost = styled.span`
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1rem;
   position: absolute;
-  padding-top: 0.05rem;
+  padding-top: 0.1rem;
   padding-left: 0.2rem;
 `;
 

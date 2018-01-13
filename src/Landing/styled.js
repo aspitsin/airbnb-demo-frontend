@@ -54,14 +54,26 @@ export const Img = styled.img`
   height: auto;
 `;
 
-export const Slider = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-wrap: nowrap;
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-  overflow: hidden;
+export const SliderArrow = styled.button`
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    position: absolute;
+    top: center;
+    right: -1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    background-image: url(${arrowRight});
+    background-repeat: no-repeat;
+    background-size: 0.6rem 1.1rem;
+    background-position: center center;
+    border: 0.05rem solid rgba(72, 72, 72, 0.2);
+    box-shadow: 0 0.125rem 0.25rem rgba(72, 72, 72, 0.16);
+    border-radius: 1.25rem;
+    cursor: pointer;
+  }
 `;
 
 export const Price = styled.div``;
@@ -79,4 +91,13 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
     overflow-x: visible;
   }
+`;
+export const Slider = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-wrap: nowrap;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  overflow: hidden;
 `;
