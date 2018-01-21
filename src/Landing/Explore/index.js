@@ -7,9 +7,10 @@ import img3 from "./restaurants.png";
 
 const Explore = styled.section`
   position: relative;
+  margin-top: 124px;
 `;
 
-const Card = styled.div`
+const Card = styled.a`
   border: 1px solid rgba(72, 72, 72, 0.2);
   display: flex;
   align-items: center;
@@ -58,7 +59,7 @@ export default () => {
       <Title>Explore Airbnb</Title>
       <Slider>
         <div className="col-xs-6 col-md-5 col-lg-4">
-          <Card href="#">
+          <Card href="/homes">
             <Image src={img1} alt="" />
             <CardTitle>Homes</CardTitle>
           </Card>

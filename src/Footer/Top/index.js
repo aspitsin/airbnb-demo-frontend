@@ -10,7 +10,7 @@ import {
   Arrow
 } from "./styled";
 
-import ChevronDown from "./arrow-down.svg";
+import chevronDown from "./arrow-down.svg";
 
 export default function() {
   return (
@@ -22,14 +22,14 @@ export default function() {
               <option>English</option>
               <option>Russian</option>
             </Select>
-            <Arrow src={ChevronDown} />
+            <Arrow src={chevronDown} />
           </SelectWrap>
           <SelectWrap>
             <Select>
               <option>United States Dollar</option>
               <option>Ruble</option>
             </Select>
-            <Arrow src={ChevronDown} />
+            <Arrow src={chevronDown} />
           </SelectWrap>
         </Location>
       </div>

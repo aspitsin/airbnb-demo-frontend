@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "flexboxgrid2": "^7.0.0-alpha12",
+    "google-map-react": "^0.27.0",
     "react": "^16.2.0",
+    "react-dates": "^16.0.2",
     "react-dom": "^16.2.0",
     "react-flexbox-grid": "^2.0.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "styled-components": "^2.4.0"
   },
@@ -14,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "now -e REACT_APP_SECRET_CODE=azino777"
   },
   "devDependencies": {
     "eslint": "^4.14.0",

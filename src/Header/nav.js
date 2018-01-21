@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Nav = styled.nav`
   display: none;
+  margin-top: 6px;
   @media (min-width: 992px) {
     display: flex;
     width: 100%;

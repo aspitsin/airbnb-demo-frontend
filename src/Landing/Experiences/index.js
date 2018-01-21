@@ -1,117 +1,65 @@
 import React from "react";
 import styled from "styled-components";
-import { Title } from "../styled";
-import { Card, Link, SeeAll, Image, SliderArrow, Slider } from "../styled";
+import { Title, Wrapper } from "../styled";
+import { SeeAll, SliderArrow } from "../styled";
 import img1 from "./img1.png";
 import img2 from "./img2.png";
 import img3 from "./img3.png";
 import img4 from "./img4.png";
-import StarWrapper from "../Stars/index";
-
-const Experiences = styled.section`
-  position: relative;
-`;
+import Card from "./Card";
 
 const Arrow = SliderArrow.extend`
   top: 40%;
 `;
 
-const Price = styled.span`
-  font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.1rem;
-  padding-right: 0.5rem;
-`;
-
-const CardTitle = styled.span`
-  font-family: "CircularAirLight", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
-  font-size: 1rem;
-  line-height: 1.2rem;
-
-  @media (min-width: 768px) {
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-`;
-
-const Reviews = styled.span`
-  font-size: 0.75rem;
-  line-height: 0.9rem;
-`;
-
 export default () => {
   return (
-    <Experiences>
+    <section>
       <Title>
         Experiences
         <SeeAll href="/">See all</SeeAll>
       </Title>
+
       <div className="row">
-        <Slider>
+        <Wrapper>
           <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card>
-              <Link href="/">
-                <Image src={img1} alt="" />
-                <Price>$29</Price>
-                <CardTitle>Forest therapy</CardTitle>
-              </Link>
-              <div>
-                <StarWrapper />
-                <Reviews>44 reviews</Reviews>
-              </div>
-            </Card>
+            <Card
+              title="Forest Therapy"
+              image={img1}
+              price="29$"
+              review="44 reviews"
+            />
           </div>
 
           <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card>
-              <Link href="/">
-                <Image src={img2} alt="" />
-              </Link>
-              <Link href="/">
-                <Price>$69</Price>
-                <CardTitle>Whale watching</CardTitle>
-              </Link>
-              <div>
-                <StarWrapper />
-                <Reviews>46 reviews</Reviews>
-              </div>
-            </Card>
+            <Card
+              title="Whale watching"
+              image={img2}
+              price="69$"
+              review="46 reviews"
+            />
+          </div>
+          <div className="col-xs-6 col-md-4 col-lg-3">
+            <Card
+              title="Table Mountain Summit, Cable Car Downing"
+              image={img3}
+              price="69$"
+              review="44 reviews"
+            />
           </div>
 
           <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card>
-              <Link href="/">
-                <Image src={img3} alt="" />
-              </Link>
-              <Link href="/">
-                <Price>$69</Price>
-                <CardTitle>Table Mountain Summit, Cable Car Down</CardTitle>
-              </Link>
-              <div>
-                <StarWrapper />
-                <Reviews>44 reviews</Reviews>
-              </div>
-            </Card>
+            <Card
+              title="Salsa night"
+              image={img4}
+              price="50$"
+              review="44 reviews"
+            />
           </div>
 
-          <div className="col-xs-6 col-md-4 col-lg-3">
-            <Card>
-              <Link href="/">
-                <Image src={img4} alt="" />
-              </Link>
-              <Link href="/">
-                <Price>$50</Price>
-                <CardTitle>Salsa Night</CardTitle>
-              </Link>
-              <div>
-                <StarWrapper />
-                <Reviews>44 reviews</Reviews>
-              </div>
-            </Card>
-          </div>
           <Arrow />
-        </Slider>
+        </Wrapper>
       </div>
-    </Experiences>
+    </section>
   );
 };

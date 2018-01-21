@@ -25,7 +25,9 @@ export const List = styled.div`
   width: 100%;
 `;
 
-export const Card = styled.div``;
+export const Card = styled.div`
+  display: flex;
+`;
 
 export const Link = styled.a`
   display: block;
@@ -47,13 +49,18 @@ export const SeeAll = styled.a`
   }
 `;
 
+export const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
+
 export const SliderArrow = styled.button`
   display: none;
   @media (min-width: 992px) {
     display: block;
     position: absolute;
     top: center;
-    right: -1.25rem;
+    right: -0.85rem;
     width: 2.5rem;
     height: 2.5rem;
     box-sizing: border-box;
@@ -69,15 +76,23 @@ export const SliderArrow = styled.button`
   }
 `;
 
-export const Image = styled.img`
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  margin-bottom: 0.75rem;
-`;
+export const Price = styled.div``;
+export const CardTitle = styled.div``;
+export const Review = styled.div``;
 
+export const Wrapper = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  @media (min-width: 992px) {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+`;
 export const Slider = styled.div`
-  box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-wrap: nowrap;
