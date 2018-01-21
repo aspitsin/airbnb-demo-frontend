@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import star from "../Stars/Star.png";
+import star from "../Stars/star.png";
 
 export default function(props) {
   return (

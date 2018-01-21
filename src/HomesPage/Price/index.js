@@ -9,9 +9,8 @@ const Price = styled.div`
 `;
 
 const Title = styled.p`
-  font: CircularAir;
-  font: Book;
-  font: 14px;
+  font-family: CircularAir;
+  font-size: 14px;
   line: 16px;
 `;
 

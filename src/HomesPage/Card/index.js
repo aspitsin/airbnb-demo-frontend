@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import star from "./Star.png";
+import star from "./star.png";
 
 export default function(props) {
   return (
     <Card>
       <Link href="">
         <Img src={props.image} alt="Homes" />
-        <CardTitle>{props.title}</CardTitle>
-        <Description>{props.descrip}</Description>
+        <Title>{props.title}</Title>
+        <Description>{props.description}</Description>
         <Star src={star} />
         <Star src={star} />
         <Star src={star} />
@@ -26,7 +26,7 @@ const Star = styled.img`
   padding-top: 8px;
 `;
 
-const CardTitle = styled.h2`
+const Title = styled.h2`
   font-family: "CircularAirBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
