@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import search from "./search.svg";
 
-const SearchForm = styled.form`
+const Search = styled.form`
   box-sizing: border-box;
   width: 100%;
   margin-right: 0.5rem;
@@ -36,8 +36,8 @@ const Input = styled.input`
 
 export default () => {
   return (
-    <SearchForm>
+    <Search>
       <Input type="text" name="search" placeholder="Try “Miami”" />
-    </SearchForm>
+    </Search>
   );
 };

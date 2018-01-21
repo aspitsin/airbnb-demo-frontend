@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "./nav";
-import SearchForm from "./Search";
+import Search from "./Search";
 import Logo from "./Logo";
 
 const Header = styled.header`
@@ -26,7 +26,7 @@ export default () => {
       <div className="container">
         <Wrapper>
           <Logo />
-          <SearchForm />
+          <Search />
           <Nav />
         </Wrapper>
       </div>
