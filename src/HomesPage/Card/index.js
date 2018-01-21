@@ -2,24 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import star from "./star.png";
 
-export default function(props) {
-  return (
-    <Card>
-      <Link href="">
-        <Img src={props.image} alt="Homes" />
-        <Title>{props.title}</Title>
-        <Description>{props.description}</Description>
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Star src={star} />
-        <Superhost>{props.hosts}</Superhost>
-      </Link>
-    </Card>
-  );
-}
-
 const Star = styled.img`
   color: #008489;
   margin-right: 4px;
@@ -68,3 +50,21 @@ const Img = styled.img`
   width: 100%;
   height: auto;
 `;
+
+export default function(props) {
+  return (
+    <Card>
+      <Link href="">
+        <Img src={props.image} alt="Homes" />
+        <Title>{props.title}</Title>
+        <Description>{props.description}</Description>
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Star src={star} />
+        <Superhost>{props.hosts}</Superhost>
+      </Link>
+    </Card>
+  );
+}
